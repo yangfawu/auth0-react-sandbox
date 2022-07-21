@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { AuthControl } from "./components/AuthControl/AuthControl";
+import { AuthView } from "./components/AuthView/AuthView";
+import { AuthRoles } from "./components/AuthRoles/AuthRoles";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <h1>Auth0 React Sandbox</h1>
+            <AuthControl/>
+            <AuthView/>
+            <AuthRoles/>
+        </>
+    );
 }
 
 export default App;

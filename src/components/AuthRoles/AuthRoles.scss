@@ -1,0 +1,34 @@
+.AuthRoles-btn-box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: left;
+  & > button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0.5);
+    transition: background-color 0.3s;
+    border-radius: 3px;
+    &:hover {
+      background-color: blanchedalmond;
+    }
+  }
+}
+
+.AuthRoles-link-box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & > div > span {
+    color: blue;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+}
